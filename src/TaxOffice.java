@@ -1,6 +1,10 @@
 public class TaxOffice {
 
-    private long account;
+    private int sales[];
+    int Total;
+
+
+
 
 
 }

@@ -1,14 +1,20 @@
 import java.util.Random;
+import java.util.concurrent.atomic.LongAdder;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Shop shop1 = new Shop(arrayGeneration());
-        Shop shop2 = new Shop(arrayGeneration());
-        Shop shop3 = new Shop(arrayGeneration());
+        //TaxOffice taxOffice = new TaxOffice();
+        LongAdder longAdder = new LongAdder();
 
-        Thread thread1 = new Thread()
+        int[] shop1Sales = arrayGeneration();
+
+        Thread shop1 = new Thread();
+        Thread shop2 = new Thread();
+        Thread shop3 = new Thread();
+
+        shop1.start();
     }
 
     static int[] arrayGeneration() {
